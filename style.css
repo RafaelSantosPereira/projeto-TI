@@ -17,7 +17,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+h1{
+    margin-left: 0.7vw ;
+    margin-top: 2vh;
+}
 .search-wrapper{    
     position: relative;
     flex-grow: 1;
@@ -70,7 +73,12 @@ body {
     width: auto; 
    
 }
-
+nav{
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 ul {
     display: flex;
     color: white;
@@ -79,11 +87,11 @@ ul {
     gap: 5vh;
     padding: 15px;
     margin: 20px 0;
-    width: 28vh;
+    border: 1px solid white;
     background-color: #1b1b23;
-    position: absolute;
-    left: 50%;    
-    transform: translateX(-50%);
+    align-self: center;
+    width: fit-content;
+    
     font-size: 1vw;
     font-weight: 600;
     border-radius: 30px;
@@ -110,19 +118,21 @@ main {
 }
 
 .conteiner {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5vh;
+    display: grid; /* Define como grid */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 10px; 
     width: 95%;  
     justify-content: center;
+
+    border: 1px solid white;
    
 }
 
 .square {
+    
     display: flex;
     flex-direction: row;
-    width: 50vw;  
-    height: 20vw;  
+    
     background-color: #1b1b23;
     margin: 10px;
     border-radius: 15px;
@@ -132,18 +142,20 @@ main {
 .card {
     flex: 0 0 43%;  /* A imagem ocupará 43% da largura da .square */
     aspect-ratio: 2 / 3; /* Mantém a proporção 2:3 */
+    
 }
 
 .card img {
     width: 100%; 
     height: 100%; 
     object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    overflow: hidden; 
 }
 
 .desc {
     width: 57%;  
     padding: 1vw; 
-    font-size: 1.1vw; 
+    font-size: 100%; 
     
     display: flex;
     flex-direction: column;
@@ -151,10 +163,11 @@ main {
 
 }
 footer{
-    height: 10vh;
+    height: 8vh;
     display: flex;
     background-color: #1b1b23;
     text-align: center;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
