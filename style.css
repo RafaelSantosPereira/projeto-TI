@@ -407,14 +407,20 @@
             }
             .conteiner {
                 display: grid; /* Define como grid */
-                grid-template-columns: repeat(auto-fit, minmax(150px, 290px));
+                grid-template-columns: repeat(auto-fit, minmax(150px, 170px));
                 gap: 5vw; 
                 width: 95%;  
                 
                 justify-content: center;
-    
+                
             
             
+            }
+            .desc article h2{
+                font-size: 2.2vh;
+            }
+            .desc article p{
+                font-size: 1.6vh;
             }
             .banner {
                 width: 95%; /* O banner ocupa toda a largura */
