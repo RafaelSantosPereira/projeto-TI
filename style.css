@@ -15,7 +15,7 @@
             cursor: pointer;
         }
         body {
-            background-color: hsla(220, 17%, 7%, 1);
+            background-color: #0D0F13;
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
@@ -61,7 +61,7 @@
             outline: none;
             border-radius: 15px;
             transition: 300ms;    
-            background-color:#1b1b23;
+            background-color:rgb(21, 24, 32);
             
         
             color: white; 
@@ -141,8 +141,8 @@
 
         .conteiner {
             display: grid; /* Define como grid */
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5vw; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2vw; 
             width: 95%;  
             
             justify-content: center;
@@ -186,6 +186,12 @@
             
             padding-right: 1vw;
         }
+        .desc article h2{
+            font-size: 2.8vh;
+        }
+        .desc article p{
+            font-size: 1.8vh;
+        }
         .desc article{
             width: 90%;
         }
@@ -201,20 +207,40 @@
             align-items: center;
             width: 100%;
         }
+        .banner-container{
+            display: flex;
+            align-items: flex-start;
+            
+            justify-content: center;
+            width: 100%;
+            padding-top: 4vh;
+            padding-bottom: 10vh;
 
+        }
         .banner {
             position: relative;
             width: 57%;
             height: auto;
             z-index: 5;
             aspect-ratio: 16 / 9;
-            overflow-x: hidden;
+            overflow: hidden;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            display: block; /* Garantir que a exibição não seja bloqueada */
             
-            margin-bottom: 40px;
+            display: block;
         }
+        
+        .banner::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #0D0F13 100%);
+            pointer-events: none;
+            z-index: 2;
+        }
+
         
         
         .slides {
@@ -262,7 +288,7 @@
             transform: translateX(-33.3%);
         }
         #slide3:target ~ .slides {
-            transform: translateX(-67%);
+            transform: translateX(-66.7%);
         }
 
         /* Links para :target */
@@ -273,19 +299,126 @@
             transform: translateX(-50%);
             display: flex;
             gap: 10px;
+            z-index: 5;
         }
 
         .navigation-link a {
             width: 15px;
             height: 15px;
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.233);
             border-radius: 50%;
             display: inline-block;
             text-decoration: none;
             transition: background-color 0.3s ease;
+            
         }
 
         .navigation-link a:hover {
             background-color: rgba(255, 255, 255, 0.8);
+        }
+        .other{
+            position: relative;
+            width: 20vw;
+            height: 30;
+            padding-left: 1%;
+            background-color: rgb(21, 24, 32);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            
+        }
+        .other::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #0D0F13 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .other-movies{
+            
+            width: 100%;
+            height: 33%;
+
+            display: flex;
+        }
+        .text {
+            width: 65%; 
+            padding: 5%;
+            
+            overflow: hidden; 
+            z-index: 2;
+           
+            box-sizing: border-box; 
+        }
+        
+        .text p {
+            font-size: 0.7vw; /* Ajuste proporcional do tamanho da fonte */
+            
+
+            display: -webkit-box; 
+            -webkit-box-orient: vertical; 
+            -webkit-line-clamp: 5; 
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            z-index: 5;
+        }
+        
+        .text h2 {
+            font-size: 1vw; 
+            font-weight: 600;
+            
+            display: -webkit-box; 
+            -webkit-box-orient: vertical; 
+            -webkit-line-clamp: 1t; 
+            overflow: hidden; /
+            text-overflow: ellipsis; 
+            z-index: 5;
+        }
+       
+        .mini-card{
+            
+            
+            height: auto;
+            display: flex;
+            flex: 0 0 35%;
+            align-items: center;
+            justify-content: center;
+            aspect-ratio: 2/3;
+            
+        }
+        .mini-card img{
+            width: 90%;
+            border-radius: 1vh;
+            object-fit: cover; 
+            z-index: 1;
+            
+        }
+        @media (max-width: 768px) { /* Ajuste o valor conforme necessário */
+            .other {
+                display: none; /* Oculta o elemento other */
+            }
+        
+            .banner-container {
+                justify-content: center; /* Certifica-se de que o banner seja centralizado */
+                padding-bottom: 20px; /* Remove os paddings se necessário */
+            }
+            .conteiner {
+                display: grid; /* Define como grid */
+                grid-template-columns: repeat(auto-fit, minmax(150px, 290px));
+                gap: 5vw; 
+                width: 95%;  
+                
+                justify-content: center;
+    
+            
+            
+            }
+            .banner {
+                width: 95%; /* O banner ocupa toda a largura */
+                border-radius: 0; /* Remove as bordas arredondadas para um estilo fullscreen */
+            }
         }
 

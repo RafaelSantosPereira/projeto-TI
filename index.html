@@ -6,12 +6,16 @@
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
     </head>
+ 
     <body>
+      
         <header>
+            
             <div class="title">
                 <img src="images/logo.ico" alt="" class="logo">
                 <h1>TopCinema</h1>
             </div>
+            
             <div class="search-box" search-box>
                 <div class="search-wrapper" search-wrapper>
                     <input type="text" name="search" placeholder="search"aria-label="search" class="search-field" id="search-bar" autocomplete="off">
@@ -26,38 +30,69 @@
 
 
         <nav>
-            <ul>
-                <li><a href="">Movies   </a></li>
-                <li><a href="">Series</a></li>
-                <li><a href="">Top</a></li>
-        
-            </ul>
+       
         </nav>
 
         <main>
-            <div class="banner">
-                <!-- Referências para :target -->
-                <a id="slide1"></a>
-                <a id="slide2"></a>
-                <a id="slide3"></a>
-            
-                <!-- Slides -->
-                <div class="slides">
-                    <img src="images/banner_venom.jpg" alt="Slide 1">
-                    <img src="images/banner_moana.jpg" alt="Slide 2">
-                    <img src="images/banner_gladiador.jpg" alt="Slide 3">
-                </div>
-            
+            <div class="banner-container">
+                <div class="banner">
+                    <!-- Referências para :target -->
+                    <a id="slide1"></a>
+                    <a id="slide2"></a>
+                    <a id="slide3"></a>
+                
+                    <!-- Slides -->
+                    <div class="slides">
+                        <img src="images/banner_venom.jpg" alt="Slide 1">
+                        <img src="images/banner_moana.jpg" alt="Slide 2">
+                        <img src="images/banner_gladiador.jpg" alt="Slide 3">
+                    </div>
+                
+        
+        
+                    <div class="navigation-link">
+                        <a href="#slide1"></a>
+                        <a href="#slide2"></a>
+                        <a href="#slide3"></a>
+                    </div>
     
-    
-                <div class="navigation-link">
-                    <a href="#slide1"></a>
-                    <a href="#slide2"></a>
-                    <a href="#slide3"></a>
                 </div>
-
+                <div class="other">
+                    
+                    <div class="other-movies">
+                        <div class="mini-card">
+                            <img src="images/sonic.jpg" alt="Inside Out">
+                        </div>
+                        <div class="text">
+                            <h2>Sonic the Hedgehog 3</h2>
+                            <p>Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow, a mysterious villain with powers unlike anything they have faced before.</p>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="other-movies">
+                        <div class="mini-card">
+                            <img src="images/silo.jpg" alt="Inside Out">                        
+                        </div>
+                        <div class="text">
+                            <h2>silo</h2>
+                             <p>In a ruined and toxic future, thousands live in a giant silo deep underground.
+                                 After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.</p>
+                        </div>
+                    </div>
+                    <div class="other-movies">
+                        <div class="mini-card">
+                            <img src="images/got.jpg" alt="Inside Out">                        
+                        </div>
+                        <div class="text">
+                            <h2>Game of Thrones</h2>
+                             <p>Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
+           
+            
             <div class="conteiner">
                 <div class="square">
                     <div class="card">
@@ -139,10 +174,13 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
         </main>
         
         
         
-        
+       
     </body>
     </html>
