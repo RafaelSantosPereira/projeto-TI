@@ -407,7 +407,7 @@
             }
             .conteiner {
                 display: grid; /* Define como grid */
-                grid-template-columns: repeat(auto-fit, minmax(150px, 170px));
+                grid-template-columns: repeat(auto-fit, minmax(150px, 160px));
                 gap: 5vw; 
                 width: 95%;  
                 
