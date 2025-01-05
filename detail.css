@@ -82,10 +82,7 @@ iframe{
     height: 100%;
 }
 
-::-webkit-scrollbar{
-    width: 8px;
-}
- 
+
 ::-webkit-scrollbar-thumb{
     background-color: var(--banner-background);
     border-radius: var(--radius-8);
@@ -95,6 +92,9 @@ iframe{
 .img-cover, .heading, .title-large{
     font-weight: var(--weight-bold);
     letter-spacing: 0.5px;
+}
+.heading{
+    font-size: 3.5vh;
 }
 .img-cover{   
     width: 100%;
@@ -131,9 +131,9 @@ iframe{
 .container-detail{
     width: 100%;
     position: absolute;
-    padding-top: 70px;
-    padding-left: 70px;
-    padding-right: 50px;
+    padding-top: 5vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
     overflow-y: overlay;
     background-color: hsla(250, 13%, 11%, 1);
     height: 100vh;
@@ -195,7 +195,7 @@ iframe{
     height:70vh;
 }
 .detail-box{
-    max-height: 100%;
+    height: 100%;
     overflow-y: auto;
     margin-left: 30px;
     width: 70vw;
@@ -211,7 +211,7 @@ iframe{
     background-color: var(--banner-background);
     border-radius: var(--radius-8);
 }
-.detail-box::-webkit-scrollbar {width: 15px;}
+.detail-box::-webkit-scrollbar {width: 10px;}
 .detail-box::-webkit-scrollbar-track-piece {color: transparent;}
 
 .detail-content .meta-list{
@@ -224,7 +224,9 @@ iframe{
     margin-block-start: 30px;
     margin-block-end: 20px;
 }
-
+.title-large{
+    font-size: 2.7vh;
+}
 .movie-detail .list-item{
     display: flex;
     align-items: flex-start;
@@ -254,7 +256,7 @@ iframe{
     background: var(--banner-background);
     border-radius: var(--radius-8);
 }
-.video-list::-webkit-scrollbar {width: 15px;}
+.video-list::-webkit-scrollbar {height: 10px;}
 .video-list::-webkit-scrollbar-track-piece {color: transparent;}
 .video-inner{
     position: relative;
@@ -266,15 +268,29 @@ iframe{
 .video-card{
     aspect-ratio: 16/9;
     flex-shrink: 0;
-    max-width: 500px;
-    width: 480px;
+    max-width: 480px;
+    width: 85vw;
 }
-
-
-
 
 .meta-item{
     display: flex;
     align-items: center;
     gap: 4px;
+}
+
+
+@media (max-width: 900px){
+    figure{
+        display: none;
+    }
+    .detail-box{
+        
+        width: 90vw;
+        
+    }
+    .container-detail{
+
+        padding-left: 0;
+       
+    }
 }

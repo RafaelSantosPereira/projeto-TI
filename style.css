@@ -4,7 +4,7 @@
             padding: 0;
            
             display: flex;
-            
+            scroll-behavior: smooth;
             width: 100%;
             align-items: center;
         }
@@ -278,7 +278,19 @@
             border-radius: 50%;
         }
 
-       
+        #slide1{
+            position: absolute;
+            border: 20px solid yellow;
+            top: 0;;
+        }
+        #slide2{
+            position: absolute;
+            top: 0;;
+        }
+        #slide3{
+            position: absolute;
+            top: 0;;
+        }
         
         /* Controle com :target */
         #slide1:target ~ .slides {
@@ -398,14 +410,14 @@
         }
 
         
-        @media (max-width: 768px) { /* Ajuste o valor conforme necessário */
+        @media (max-width: 768px) { 
             .other {
-                display: none; /* Oculta o elemento other */
+                display: none; 
             }
         
             .banner-container {
-                justify-content: center; /* Certifica-se de que o banner seja centralizado */
-                padding-bottom: 20px; /* Remove os paddings se necessário */
+                justify-content: center; 
+                padding-bottom: 20px; 
             }
             .conteiner {
                 display: grid; /* Define como grid */
@@ -425,8 +437,8 @@
                 font-size: 1.6vh;
             }
             .banner {
-                width: 95%; /* O banner ocupa toda a largura */
-                border-radius: 0; /* Remove as bordas arredondadas para um estilo fullscreen */
+                width: 95%; 
+                border-radius: 0; 
             }
         }
 
