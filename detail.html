@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+    <main>                         
+        <!--content-->
+        <article class="container-detail" id="container" page-content>
+            <!--banner-->
+            <div class="movie-detail" id="movie-detail">
+                <div class="backdrop-image" id="backdrop-image" style="background-image:url(images/sonic_backdrop.jpg)"></div>
+                
+                <figure class="poster-box movie-poster">
+                    <img src="images/sonic.jpg" id="movie-poster" alt="Sonic Movie Poster" class="img-cover">
+                </figure>
+    
+                <div class="detail-box">
+                    <div class="detail-content">
+                        <h1 class="heading" id="movie-title">Sonic the Hedgehog</h1>
+                        <div class="meta-list">
+                            <div class="meta-item">
+                                <img src="images/star.png" width="20px" alt="rating">
+                                <span class="span" id="movie-rating">7.5</span>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="meta-item" id="duration-time">1h 39min</div>
+                            <div class="separator"></div>
+                            <div class="meta-item" id="movie-year">2020</div>
+                        </div>
+                        <p class="genre" id="movie-genres">Action, Comedy, Family</p>
+    
+                        <p class="overview" id="movie-overview">
+                            Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow, a mysterious villain with powers unlike anything they have faced before. 
+                            With their abilities outmatched in every way, Team Sonic must seek out an unlikely alliance in hopes of stopping Shadow and protecting the planet.
+                        </p>
+    
+                        <ul class="detail-list">
+                            <div class="list-item">
+                                <p class="list-name">Starring</p>
+                                <p id="Starring">Ben Schwartz, Jim Carrey, Keanu Reeves, Idris Elba, Colleen O'Shaughnessey, Krysten Ritter, James Marsden, Tika Sumpter, Alyla Browne, Lee Majdoub</p>
+                            </div>
+                            <div class="list-item">
+                                <p class="list-name" id="director-label">Directed by</p>
+                                <p id="director">Joey Coughlin</p>
+                            </div>
+                        </ul>  
+                        
+                        <div class="title-wrapper">
+                            <h3 class="title-large" id="label-trailers">Trailers and Clips</h3>
+                        </div>
+                        <div class="video-list">
+                            <div class="video-inner" id="video-inner">
+                                <div class="video-card">
+                                    <iframe id="trailer-1" src="https://www.youtube.com/embed/szby7ZHLnkA" frameborder="0" allowfullscreen></iframe>
+                                </div>                       
+                            </div>
+                        </div>                                            
+                    </div>
+                </div>                   
+            </div>
+    
+            <!-- <section class="movie-list" aria-label="popular movies">
+                <div class="title-wrapper">
+                    <h3 class="title-large also-like">You May Also Like</h3>
+                </div>
+                <div class="slider-list" id="slider-list">
+                    <div class="slider-inner" id="slider-inner">
+                        <div class="movie-card">
+                            <img src="images/movie1.jpg" alt="Movie 1">
+                            <p>Movie 1</p>
+                        </div>
+                        <div class="movie-card">
+                            <img src="images/movie2.jpg" alt="Movie 2">
+                            <p>Movie 2</p>
+                        </div>
+                        <div class="movie-card">
+                            <img src="images/movie3.jpg" alt="Movie 3">
+                            <p>Movie 3</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section> -->
+        </article>
+    </main>
+</body>
+</html>

@@ -396,6 +396,8 @@
             z-index: 1;
             
         }
+
+        
         @media (max-width: 768px) { /* Ajuste o valor conforme necessário */
             .other {
                 display: none; /* Oculta o elemento other */
