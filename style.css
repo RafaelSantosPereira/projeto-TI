@@ -279,16 +279,15 @@
         }
 
         #slide1{
-            position: absolute;
-            border: 20px solid yellow;
+            position: fixed;
             top: 0;;
         }
         #slide2{
-            position: absolute;
+            position: fixed;
             top: 0;;
         }
         #slide3{
-            position: absolute;
+            position: fixed;
             top: 0;;
         }
         
