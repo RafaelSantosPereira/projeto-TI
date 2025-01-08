@@ -26,6 +26,17 @@
                 
                                     
             </div>
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                <label for="dropdown-toggle" class="dropdown-btn" aria-label="Open menu">
+                    <img src="images/icons8-menu.svg" alt="Menu" class="menu-icon">
+                </label>
+                <ul class="dropdown-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#series">Series</a></li>
+                </ul>
+            </div>
         </header>
 
 
@@ -43,9 +54,21 @@
                 
                     <!-- Slides -->
                     <div class="slides">
-                        <img src="images/banner_venom.jpg" alt="Slide 1">
-                        <img src="images/banner_moana.jpg" alt="Slide 2">
-                        <img src="images/banner_gladiador.jpg" alt="Slide 3">
+                        <div class="slide">
+                            <div class="gradient-overlay"></div> <!-- Gradiente exclusivo para cada slide -->
+                            <div class="banner-title">Venom: Let There Be Carnage</div>
+                            <img src="images/banner_venom.jpg" alt="Slide 1">
+                        </div>
+                        <div class="slide">
+                            <div class="gradient-overlay"></div>
+                            <div class="banner-title">Moana: Return to the Sea</div>
+                            <img src="images/banner_moana.jpg" alt="Slide 2">
+                        </div>
+                        <div class="slide">
+                            <div class="gradient-overlay"></div>
+                            <div class="banner-title">Gladiator: The Return</div>
+                            <img src="images/banner_gladiador.jpg" alt="Slide 3">
+                        </div>
                     </div>
                 
         
@@ -92,7 +115,7 @@
                 </div>
             </div>
            
-            
+            <h2 class="popular">Most Popular</h2>
             <div class="conteiner">
                 <a class="square" href="detail2.html">
                     <div class="card">
