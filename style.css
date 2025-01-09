@@ -474,8 +474,10 @@
                 
             }
             .popular{
-                font-size: 2.5vh;
+                font-size: 4vh;
                 font-weight: 500;
+                padding-top: 30px;
+                padding-bottom: 20px;
             }
             
             .dropdown {
@@ -484,7 +486,7 @@
                 align-items: center;
             }
             
-            /* Ocultar input checkbox */
+            
             .dropdown-toggle {
                 display: none;
             }
@@ -554,7 +556,7 @@
                 transform: translateY(0);
                 pointer-events: auto;
             }
-            @media (max-width: 1100px) { 
+            @media (max-width: 1000px) {
                 .other {
                     display: none; 
                 }
@@ -585,6 +587,8 @@
                     width: 95%; 
                     border-radius: 0; 
                 }
+            }
+               
 
                 @media (max-width: 500px) { 
                     
